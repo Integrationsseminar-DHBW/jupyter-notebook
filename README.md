@@ -29,7 +29,7 @@ pip install qdrant-client scikit-learn pandas numpy matplotlib
 ## Nutzung
 
 1. **.env-Datei erstellen:**  
-   Kopiere die Datei `.env.sample` zu `.env` und füge deinen Qdrant API-Key sowie den Host hinzu:
+   Kopiere die Datei `.env_sample` zu `.env` und füge deinen Qdrant API-Key sowie den Host hinzu:
    ```env
    QDRANT_API_KEY=dein_api_key
    QDRANT_HOST=dein_qdrant_host
