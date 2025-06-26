@@ -18,24 +18,27 @@ Dieses Projekt demonstriert die grundlegende Nutzung der Qdrant Vektor-Datenbank
 
 - Python 3.8+
 - Zugang zu einem Qdrant-Server (lokal oder Cloud)
-- Optional: Infisical-Account für Secret-Management
+- Eine `.env`-Datei mit deinem Qdrant API-Key (siehe unten)
 
 ## Installation
 
 ```bash
-pip install qdrant-client infisicalsdk scikit-learn pandas numpy matplotlib
+pip install qdrant-client scikit-learn pandas numpy matplotlib
 ```
 
 ## Nutzung
 
-1. **Notebook öffnen:**  
+1. **API-Key hinterlegen:**  
+   Lege eine Datei namens `.env` im Projektverzeichnis an und füge deinen Qdrant API-Key als Umgebungsvariable hinzu:
+   ```env
+   QDRANT_API_KEY=dein_api_key
+   ```
+
+2. **Notebook öffnen:**  
    Öffne [`tutorial.ipynb`](tutorial.ipynb) in JupyterLab oder VS Code.
 
-2. **API-Key & Verbindung:**  
-   Trage deinen Qdrant-API-Key ein oder nutze das Infisical-Secret-Management wie im Notebook gezeigt.
-
 3. **Schrittweise ausführen:**  
-   Folge den nummerierten Zellen im Notebook. Jede Zelle enthält Erklärungen und Beispielcode.
+   Folge den nummerierten Zellen im Notebook. Jede Zelle enthält Erklärungen und Beispielcode. Die Umgebungsvariablen werden automatisch geladen (z.B. mit `python-dotenv`).
 
 4. **Visualisierung:**  
    Am Ende findest du eine 3D-Visualisierung von Vektoren und Suchergebnissen.
