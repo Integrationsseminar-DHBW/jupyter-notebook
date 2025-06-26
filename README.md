@@ -18,7 +18,7 @@ Dieses Projekt demonstriert die grundlegende Nutzung der Qdrant Vektor-Datenbank
 
 - Python 3.8+
 - Zugang zu einem Qdrant-Server (lokal oder Cloud)
-- Eine `.env`-Datei mit deinem Qdrant API-Key (siehe unten)
+- Eine `.env`-Datei mit deinem Qdrant API-Key und Host (siehe unten)
 
 ## Installation
 
@@ -28,10 +28,11 @@ pip install qdrant-client scikit-learn pandas numpy matplotlib
 
 ## Nutzung
 
-1. **API-Key hinterlegen:**  
-   Lege eine Datei namens `.env` im Projektverzeichnis an und füge deinen Qdrant API-Key als Umgebungsvariable hinzu:
+1. **.env-Datei erstellen:**  
+   Kopiere die Datei `.env.sample` zu `.env` und füge deinen Qdrant API-Key sowie den Host hinzu:
    ```env
    QDRANT_API_KEY=dein_api_key
+   QDRANT_HOST=dein_qdrant_host
    ```
 
 2. **Notebook öffnen:**  
